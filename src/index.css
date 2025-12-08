@@ -3,6 +3,10 @@
 
 @import "tailwindcss";
 
+:root {
+  --spacing: 0.25rem; /* default: 0.25rem */
+}
+
 @theme {
   --font-palanquin: "Palanquin", system-ui, sans-serif;
   --font-montserrat: "Montserrat", system-ui, sans-serif;
@@ -67,7 +71,7 @@
 }
 
 @utility padding {
-  @apply px-8 py-[200px] sm:px-16 sm:py-[200px]
+  @apply px-8 py-12 sm:px-16 sm:py-24
 }
 
 @utility padding-x {
