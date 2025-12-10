@@ -3,8 +3,16 @@
 
 @import "tailwindcss";
 
-:root {
-  --spacing: 0.25rem; /* default: 0.25rem */
+/* --- Base reset --- */
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
 }
 
 @theme {
@@ -45,14 +53,9 @@
 
   --text-8xl: 96px;
   --text-8xl--line-height: 106px;
-}
 
-/* --- Base reset --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  --background-image-hero: url('assets/images/collection-background.svg');
+  --background-image-card: url('assets/images/thumbnail-background.svg');
 }
 
 @layer components {
@@ -96,9 +99,4 @@
 
 @utility padding-b {
   @apply pb-12 sm:pb-24
-}
-
-@utility debug {
-  background: hotpink;
-  padding: 50px;
 }
